@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARTHIKRAJ- Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3>KARTHIKRAJ</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm KARTHIKRAJ</h1>
+            <div class="typing-text">
+                <span>Front-end Developer | Software Tester | Problem Solver</span>
+            </div>
+            <a href="#contact" class="cta-button">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="scroll-trigger">
+        <h2>About Me</h2>
+        <p> I gained practical exposure to UI/UX principles, responsive
+            design, and core front-end technologies. In parallel, I earned a
+            Python Certification from GUVI, further enhancing my
+            programming and problem-solving abilities.
+            With a blend of analytical thinking and a keen interest in real
+            world applications of AI, I’m constantly exploring opportunities
+            to grow in the fields of machine learning, data analytics, and
+            web development.
+            I also improved key soft skills such as collaboration,
+            adaptability, and communication. Working closely with a team, I
+            developed a problem-solving mindset and learned how to
+            receive feedback constructively.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content scroll-trigger">
+                    <h3> Ether Infotech</h3>
+                    <p>June 2025 - July 2025  |  Front end Developer, improving user engagement by 30%.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content scroll-trigger">
+                    <h3>B.Tech in Artificial intelligence & data science</h3>
+                    <p>2022 - 2026 | specializing in web development and data structures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card scroll-trigger">
+                <h3>HTML5</h3>
+                <p>HTML is the backbone of every web page, defining its structure and content</p>
+            </div>
+            <div class="skill-card scroll-trigger">
+                <h3>CSS3</h3>
+                <p>CSS styles the web, turning plain structure into visually engaging designs.</p>
+            </div>
+            <div class="skill-card scroll-trigger">
+                <h3>Python</h3>
+                <p>Developing secure, scalable backend systems and solving problems.</p>
+            </div>
+            <div class="skill-card scroll-trigger">
+                <h3>Database & Cloud</h3>
+                <p>Designing and optimizing SQL/NoSQL databases and deploying solutions on AWS/GCP.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Certifications</h2>
+        <div class="projects-grid">
+            <div class="project-card scroll-trigger">
+                <img src="GuviCertification - 1V3oO6T9AgY80Q4723.png" alt="Guvi Certification" style="height: 400px; width: 600px;">
+                <h3>Guvi Certification</h3>
+                <p>Certified in Python programming with a strong foundation in syntax, data structures, and problem-solving techniques.</p>
+            </div>
+            <div class="project-card scroll-trigger">
+                <img src="mongoDB.png" alt="mongoDB Certification" style="height: 400px; width: 600px;">
+                <h3>mongoDB Certification</h3>
+                <p>Acquired essential skills in MongoDB for efficient data storage, retrieval, and management in modern applications.</p>
+            </div>
+            <div class="project-card scroll-trigger">
+                <img src="Forage.png" alt="Forage Certification" style="width: 600px; height: 400px;">
+                <h3>Forage Certification</h3>
+                <p>Completed a hands-on cybersecurity simulation, gaining practical experience in identifying, analyzing, and mitigating cyber threats</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-form scroll-trigger">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 KARTHIKRAJ. All rights reserved. |<a href="http://www.linkedin.com/in/karthikraj-subramaniam-99bb31265">LinkedIn</a>
+    </footer>
+
+    <script>
+        const scrollTriggers = document.querySelectorAll('.scroll-trigger');
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        scrollTriggers.forEach(trigger => observer.observe(trigger));
+    </script>
+</body>
+
+</html>
