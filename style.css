@@ -82,7 +82,7 @@ section {
 }
 
 #home {
-    background: linear-gradient(135deg, #dfe4ea 0%, #a4b0be 100%);
+    background: linear-gradient(135deg, #dfe4ea 75%, #2f73c0 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: radial-gradient(circle, rgba(0, 229, 246, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
     z-index: 1;
 }
 
@@ -110,7 +110,7 @@ section {
 }
 
 #home h1 {
-    font-size: 5rem;
+    text-align: u;
     font-weight: 900;
     color: #1e272e;
     margin-bottom: 1.5rem;
@@ -189,7 +189,7 @@ img {
 }
 
 .cta-button {
-    background-color: #00ddeb;
+    background-color: #065a60;
     color: white;
     padding: 1rem 2rem;
     border-radius: 50px;
@@ -604,5 +604,6 @@ a {
 
 .social-links a:hover {
     color: #00ddeb;
-    border-radius: 80%;
+
+
 }
