@@ -110,7 +110,7 @@ section {
 }
 
 #home h1 {
-    text-align: u;
+    font-size: 2rem;
     font-weight: 900;
     color: #1e272e;
     margin-bottom: 1.5rem;
@@ -604,6 +604,5 @@ a {
 
 .social-links a:hover {
     color: #00ddeb;
-
 
 }
